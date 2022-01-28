@@ -16,11 +16,11 @@ pipeline {
         bat "mvn package"
       }
     }
-    stage("sonarqube stage"){
+   /* stage("sonarqube stage"){
        steps {
          bat "mvn package sonar:sonar"
        }
-    }
+    } */
     stage("Consolidate Results") {
       steps {
         input("Do you want to capture results?")
